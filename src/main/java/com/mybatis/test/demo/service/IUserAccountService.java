@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IUserAccountService {
     public List<UserAccount> getUserAccountList();
+
+
 }
