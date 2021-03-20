@@ -19,12 +19,12 @@ public class Effect extends Model {
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "effect_id")
     @TableGenerator(name = "effect_id", initialValue = 0, allocationSize = 1,table = "seq_table")
     private int id;
-    private String effect_name;
-    private String effect_imgurl;
-    private String effect_person;
+    private String effectName;
+    private String effectImgurl;
+    private String effectPerson;
     @Column(columnDefinition = "text")
-    private String effect_content;
-    private int dic_num;
-    private Date dic_datetime;
-    private int course_id;
+    private String effectContent;
+    private int dicNum;
+    private Date dicDatetime;
+    private int courseId;
 }

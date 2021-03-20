@@ -18,21 +18,21 @@ public class ExpModel extends Model {
     @TableGenerator(name = "exp_model_id", initialValue = 0, allocationSize = 1,table = "seq_table")
     @Column(name = "m_id")
     //模块id
-    private int m_id;
+    private int mId;
 
     @Column(nullable = false)
     private int courseId;
     //模块名称
     @Column(length = 80,nullable = false)
-    private String m_name;
+    private String mName;
     //实验负责人
     @Column(length = 30,nullable = false)
-    private String m_manager;
+    private String mManager;
     //    //所属课程id
 //    private int course_id;
     //实验类型
     @Column(length = 16,nullable = false)
-    private String m_type;
+    private String mType;
     //课时
     private int classhour;
     //实验简介图片地址
@@ -50,23 +50,23 @@ public class ExpModel extends Model {
     private String principle;
     //实验内容
     @Column(columnDefinition = "text")
-    private String m_content;
+    private String mContent;
     //实验资料介绍
     @Column(columnDefinition = "text")
-    private String m_edata_intro;
+    private String mEdataIntro;
     //实验资料地址
     @Column(columnDefinition = "text")
-    private String m_edataurl;
+    private String mEdataurl;
     //实验步骤
     @Column(columnDefinition = "longtext")
-    private String m_step;
+    private String mStep;
     //进入实验平台链接
     @Column(length = 300,nullable = false)
-    private String m_inurl;
+    private String mInurl;
     //是否需要考核
     @Column(nullable = false,columnDefinition = "bit default 0")
     private boolean needKaohe;
     //模块报告类型
     @Column(nullable = false,columnDefinition = "bit default 0")
-    private boolean report_type;
+    private boolean reportType;
 }

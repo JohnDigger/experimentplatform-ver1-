@@ -22,14 +22,14 @@ public class NewsInfo extends Model {
     @TableGenerator(name = "newsinfo_id",initialValue = 0,allocationSize = 1,table = "seq_table")
     private int id;
 
-    private String news_name;
+    private String newsName;
 
-    private String news_person;
+    private String newsPerson;
     @Column(columnDefinition = "text")
     private String content;
 
-    private int dic_num;
+    private int dicNum;
 
-    private Date dic_datetime;
+    private Date dicDatetime;
 
 }

@@ -11,4 +11,11 @@ import java.util.Map;
 @Component(value = "newsInfoMapper")
 public interface NewsInfoMapper extends BaseMapper<NewsInfo> {
     List<NewsInfo> findAllorderby(Map params);
+    Integer  findAllmodelpeople();
+    Integer  findAllmodelpeople1();
+   Integer findAllPass();
+   Integer findAllPass1();
+    Integer findExcellentpeople();
+    Integer findQualifiedpeople();
+    Integer findUnqualifiedpeople();
 }
